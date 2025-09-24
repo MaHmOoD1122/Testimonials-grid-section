@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  display: grid;
+  place-content: center;
+}
+.main-box {
+  display: grid;
+  /* min-height: 70rem; */
+  max-width: 110rem;
+  grid-template-areas:
+    "one one two five"
+    "three four four five";
+  gap: 2em;
+}
+.testimonial:nth-child(1) {
+  grid-area: one;
+}
+.testimonial:nth-child(2) {
+  grid-area: two;
+}
+.testimonial:nth-child(3) {
+  grid-area: three;
+}
+.testimonial:nth-child(4) {
+  grid-area: four;
+}
+.testimonial:nth-child(5) {
+  grid-area: five;
+}
+
+.testimonial {
+  padding: 3rem;
+  font-size: 13px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 0.5rem 9rem rgba(0, 0, 0, 0.3);
+}
+.testimonial-one {
+  background: url(images/bg-pattern-quotation.svg);
+  background-color: hsl(263, 55%, 52%);
+  background-repeat: no-repeat;
+  background-position: 90% top;
+}
+.testimonial-two {
+  background-color: hsl(217, 19%, 35%);
+  max-width: 25rem;
+}
+.testimonial-three {
+  color: hsl(217, 19%, 35%);
+  background-color: white;
+  max-width: 25rem;
+}
+.testimonial-four {
+  background-color: hsl(219, 29%, 14%);
+}
+.testimonial-five {
+  color: hsl(217, 19%, 35%);
+  background-color: white;
+  max-width: 24rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-info {
+  display: inline-block;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+h3 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+p {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.testimonial img {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: 2px solid white;
+}
+
+.testimonial-four img {
+  border: 2px solid blue;
+}
+@media (max-width: 900px) {
+  .main-box {
+    grid-template-areas:
+      "one"
+      "two" "three" "four" "five";
+    padding: 1rem;
+    margin: 5rem 0;
+  }
+  .testimonial {
+    min-width: 100%;
+  }
+}
