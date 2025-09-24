@@ -7,4 +7,5 @@ I made this project based on challenge on frontend mentor named 'Testimonials gr
 - Flexbox
 - CSS Grid
 
-  ## link of the project
+## link of the project
+https://mahmood1122.github.io/Testimonials-grid-section/
